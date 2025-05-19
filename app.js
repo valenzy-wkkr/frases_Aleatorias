@@ -21,6 +21,11 @@ function obtenerFrase(){
     })
 }
 
+function resetFrase() {
+    document.getElementById("quote").textContent = "Haz clic para obtener una frase aleatoria";
+    document.getElementById("author").textContent = "";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("button").addEventListener("click", obtenerFrase)
 })
